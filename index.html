@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas</title>
+    <link rel="info" href="ads.txt">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+  </head>
+  <body>
+    <h1>Lista de Tarefas</h1>
+    <div class="container">
+      <div class="form">
+        <label for="activity">Atividade:</label>
+        <input type="text" id="activity" name="activity">
+        <label for="due-date">Data de Vencimento:</label>
+        <input type="date" id="due-date" name="due-date">
+        <button onclick="addTask()">Adicionar Tarefa</button>
+      </div>
+      <div class="tasks">
+        <h2>A Fazer</h2>
+        <ul id="todo-list"></ul>
+        <h2>Atrasadas</h2>
+        <ul id="overdue-list"></ul>
+        <h2>Concluídas</h2>
+        <ul id="completed-list"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
